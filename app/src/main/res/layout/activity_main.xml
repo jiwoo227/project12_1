@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
 
    <LinearLayout
       android:orientation="horizontal"
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
-   <TextView
+   <EditText
+       android:id="@+id/edit_name"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="@string/name"
@@ -66,12 +67,23 @@
       <EditText
           android:id="@+id/edit_result"
           android:background="#FF9E9E"
+          android:layout_weight="1"
           android:layout_width="match_parent"
           android:layout_height="match_parent"/>
+
+      <EditText
+          android:id="@+id/edit_name_result"
+          android:background="#FF9E9E"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+      <EditText
+          android:id="@+id/edit_count_result"
+          android:background="#FF9E9E"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
    </LinearLayout>
 
-   <EditText
-       android:id="@+id/edit_name"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content" />
 </LinearLayout>
