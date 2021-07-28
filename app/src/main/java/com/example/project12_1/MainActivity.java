@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnInit = findViewById(R.id.btn_init);
         Button btnInput = findViewById(R.id.btn_input);
         Button btnSearch = findViewById(R.id.btn_search);
+        Button btnUpdate = findViewById(R.id.btn_update);
+        Button btnDelete = findViewById(R.id.btn_delete);
 
         dbHelper = new MyDBHelper(this);
         btnInit.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +68,22 @@ public class MainActivity extends AppCompatActivity {
                 db.close();
             }
         });
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                db = dbHelper.getWritableDatabase();
+                db.execSQL("insert into gtoupTB values('"+editName.getText().toString()+"', "+editCOunt.getText().toString()+");");
+                db.close();
+            }
+        });
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                db = dbHelper.getWritableDatabase();
+                db.execSQL("insert into gtoupTB values('"+editName.getText().toString()+"', "+editCOunt.getText().toString()+");");
+                db.close();
+            }
+        });
     }
 
     public class MyDBHelper extends SQLiteOpenHelper {
@@ -85,5 +103,7 @@ public class MainActivity extends AppCompatActivity {
             db.execSQL("drop table if exists groubTB");
             onCreate(db);
         }
+
+
     }
 }

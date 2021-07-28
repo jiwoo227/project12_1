@@ -59,6 +59,16 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/btn_search"/>
+      <Button
+          android:id="@+id/btn_update"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="올리기"/>
+      <Button
+          android:id="@+id/btn_delete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="지우기"/>
    </LinearLayout>
    <LinearLayout
        android:orientation="horizontal"

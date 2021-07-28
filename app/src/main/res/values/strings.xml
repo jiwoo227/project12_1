@@ -5,4 +5,6 @@
     <string name="btn_init">초기화</string>
     <string name="btn_input">입력</string>
     <string name="btn_search">조회</string>
+    <string name="btn_update">올리기</string>
+    <string name="btn_delete">지우기</string>
 </resources>
